@@ -12,9 +12,8 @@ Description: Enhances the 'cache' package to use 'fst' as a backend for
     high performance reading/writing. 
 Depends:
     R (>= 3.1.0),
+    cache (>= 0.2.4.1),
     fst (>= 0.8.8)
-Enhances:
-    cache (>= 0.2.4.1)
 Suggests: 
     testthat (>= 1.0.2), 
 License: GPL-3 | file LICENSE

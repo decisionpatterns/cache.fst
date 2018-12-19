@@ -1,5 +1,3 @@
-extension = 'fst'
-
 #' Cache objects using fst (fst)
 #'
 #' Enables caching using the *fst* package
@@ -33,11 +31,14 @@ cache_register_fst <- function()
     , reader=fst::read_fst
     , writer=fst::write_fst
     , ext=extension
+    , pkg=pkg
     )
 
 
 #' @rdname cache.fst
 #' @export
 
-cache_use_fst <- function()
+cache_use_fst <- function() {
+  cache_register_f
   cache::cache_backend("fst")
+}
