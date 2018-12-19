@@ -28,9 +28,9 @@
 cache_register_fst <- function()
   cache::cache_backend_register(
       name='fst'
+    , ext=ext
     , reader=fst::read_fst
     , writer=fst::write_fst
-    , ext=extension
     , pkg=pkg
     )
 
@@ -39,6 +39,6 @@ cache_register_fst <- function()
 #' @export
 
 cache_use_fst <- function() {
-  cache_register_f
+  cache_register_fst()
   cache::cache_backend("fst")
 }
