@@ -19,7 +19,8 @@ reason to invoke this function as it is called when the packages is
 attached.
 }
 \examples{
-dontrun{
+
+\dontrun{
  cache_use_fst()
  cache(mtcars)
  if( exists('mtcars') ) rm(mtcars)

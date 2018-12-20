@@ -1,4 +1,4 @@
 # non-exported/package constants
 
-extension = 'fst'
-pkg = 'cache.fst'
+EXTENSION = 'fst'
+PKG = 'cache.fst'

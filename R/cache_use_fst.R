@@ -13,7 +13,8 @@
 #'  - [cache_use_fst()]
 #'
 #' @examples
-#' dontrun{
+#'
+#' \dontrun{
 #'  cache_use_fst()
 #'  cache(mtcars)
 #'  if( exists('mtcars') ) rm(mtcars)
@@ -28,10 +29,10 @@
 cache_register_fst <- function()
   cache::cache_backend_register(
       name='fst'
-    , ext=ext
+    , ext=EXTENSION
     , reader=fst::read_fst
     , writer=fst::write_fst
-    , pkg=pkg
+    , pkg=PKG
     )
 
 
